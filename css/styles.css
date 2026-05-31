@@ -527,3 +527,618 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* =========================
+   🚜 Bulk Orders CTA Banner
+========================= */
+
+.bulk-orders-cta {
+  background: url("../assets/gallery/hero-banner.jpg") center center/cover
+    no-repeat;
+
+  min-height: 500px;
+
+  position: relative;
+}
+
+/* Overlay */
+
+.cta-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Content */
+
+.cta-content {
+  text-align: center;
+
+  color: #fff;
+
+  max-width: 850px;
+
+  margin: auto;
+
+  padding: 80px 0;
+}
+
+/* Tag */
+
+.cta-tag {
+  display: inline-block;
+
+  background: rgba(244, 162, 97, 0.15);
+
+  border: 1px solid rgba(244, 162, 97, 0.3);
+
+  color: #f4a261;
+
+  padding: 10px 20px;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+/* Heading */
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+
+  margin-bottom: 20px;
+
+  font-family: "Oswald", sans-serif;
+}
+
+/* Paragraph */
+
+.cta-content p {
+  color: #ddd;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  align-items: center;
+}
+
+/* WhatsApp Button */
+
+.cta-whatsapp {
+  background: #25d366;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  padding: 15px 28px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+/* Phone Button */
+
+.cta-phone {
+  background: transparent;
+
+  border: 2px solid #fff;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  padding: 15px 28px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+/* Hover Effects */
+
+.cta-whatsapp:hover {
+  transform: translateY(-4px);
+}
+
+.cta-phone:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .cta-content h2 {
+    font-size: 3rem;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  background: #111;
+  padding: 80px 0 50px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Headings */
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+  font-family: "Oswald", sans-serif;
+}
+
+/* About Text */
+
+.footer-column p {
+  color: #bbb;
+  line-height: 1.8;
+}
+
+/* Lists */
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 14px;
+}
+
+/* Links */
+
+.footer-column a {
+  color: #bbb;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #f4a261;
+}
+
+/* Social Icons */
+
+.footer-column i {
+  width: 24px;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   Copyright
+========================= */
+
+.copyright {
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 20px 0;
+}
+
+.copyright .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.copyright p {
+  color: #999;
+  font-size: 14px;
+}
+
+.copyright a {
+  color: #f4a261;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  .copyright .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* =========================
+   About Hero
+========================= */
+
+.page-hero {
+  height: 55vh;
+  background: url("../assets/gallery/about-banner.jpg") center center/cover
+    no-repeat;
+
+  position: relative;
+}
+
+.page-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+}
+
+.page-hero p {
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-hero h1 {
+    font-size: 4rem;
+  }
+}
+
+/* =========================
+   Company Story
+========================= */
+
+.about-story {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin: 15px 0 20px;
+  font-family: "Oswald", sans-serif;
+  color: #111;
+}
+
+.about-content p {
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =========================
+   Mission & Vision
+========================= */
+
+.mission-vision {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.mission-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+}
+
+.mission-card i {
+  font-size: 3rem;
+  color: #f4a261;
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   Benefits Section
+========================= */
+
+.about-benefits {
+  padding: 100px 0;
+  background: #111;
+}
+
+.about-benefits .section-header h2 {
+  color: #fff;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.benefit-item {
+  background: #1b1b1b;
+  padding: 35px;
+  border-radius: 15px;
+
+  transition: 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-8px);
+}
+
+.benefit-item i {
+  font-size: 2.5rem;
+  color: #f4a261;
+  margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+}
+
+.benefit-item p {
+  color: #bbb;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =========================
+   Process Section
+========================= */
+
+.our-process {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.process-card {
+  background: #f8f9fa;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+}
+
+.process-card span {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f4a261;
+  color: #111;
+
+  font-weight: 700;
+  font-size: 1.3rem;
+
+  border-radius: 50%;
+
+  margin: 0 auto 20px;
+}
+
+.process-card h3 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+}
+
+.process-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =========================
+   About CTA
+========================= */
+
+.about-cta {
+  background: url("../assets/gallery/hero-banner.jpg") center center/cover
+    no-repeat;
+
+  position: relative;
+}
+
+.about-cta .cta-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+}
+
+.about-cta h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.about-cta p {
+  color: #ddd;
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.about-cta .cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-cta .cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* .whatsapp-text {
+  position: absolute;
+
+  right: 80px;
+
+  background: #111;
+  color: #fff;
+
+  padding: 10px 15px;
+
+  border-radius: 30px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s ease;
+
+  font-size: 14px;
+}
+
+.whatsapp-float:hover .whatsapp-text {
+  opacity: 1;
+  visibility: visible;
+} */
