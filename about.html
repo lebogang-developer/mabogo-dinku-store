@@ -3,27 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>About Us | Mabogo Dinku</title>
-
     <link rel="stylesheet" href="css/styles.css" />
-
+     <link rel="stylesheet" href="css/navbar.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-
   <body>
-    <!-- Reuse Navbar Here -->
+    <!-- =========================
+       🌿 Announcement Bar
+  ========================== -->
+
+    <div class="announcement-bar">
+      <p>🚚 Nationwide Delivery Available Across South Africa</p>
+    </div>
 
     <!-- =========================
-     About Hero
+       🧭 Navbar
+  ========================== -->
+
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html"> Mabogo Dinku </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+
+          <a href="contact.html" class="quote-btn"> Request Quote </a>
+        </nav>
+
+        <!-- Mobile Menu Icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="contact.html" class="quote-btn mobile-btn"> Request Quote </a>
+      </div>
+    </header>
+
+    <!-- =========================
+     Hero
 ========================= -->
 
     <section class="page-hero">
@@ -289,5 +331,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- 💬 Floating WhatsApp -->
+    <a href="https://wa.me/27659334950" class="whatsapp-float" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
   </body>
 </html>
