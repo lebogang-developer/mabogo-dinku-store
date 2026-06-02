@@ -1300,6 +1300,222 @@ body {
   }
 }
 
+/* =========================
+   Shop Hero
+========================= */
+
+.shop-hero {
+  height: 45vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/gallery/hero-banner.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.shop-hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.shop-hero p {
+  color: #ddd;
+  max-width: 700px;
+  margin: 15px auto 0;
+}
+
+/* Toolbar */
+
+.shop-filter-section {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.shop-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.search-box button {
+  width: 60px;
+  border: none;
+  background: #f4a261;
+}
+
+.shop-toolbar select {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+/* Product Grid */
+
+.shop-products {
+  padding-bottom: 100px;
+}
+
+.product-category {
+  display: inline-block;
+
+  background: #f4a261;
+
+  padding: 6px 12px;
+
+  border-radius: 30px;
+
+  margin-bottom: 15px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Product Buttons */
+
+.product-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.quote-btn {
+  flex: 1;
+
+  background: #111;
+  color: #fff;
+
+  text-decoration: none;
+
+  padding: 14px;
+
+  text-align: center;
+
+  border-radius: 6px;
+}
+
+.quote-btn:hover {
+  background: #f4a261;
+  color: #111;
+}
+
+.wa-btn {
+  width: 52px;
+  height: 52px;
+
+  background: #25d366;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+/* Pagination */
+
+.pagination-section {
+  padding-bottom: 80px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination a {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  background: #f8f9fa;
+  color: #111;
+
+  border-radius: 8px;
+}
+
+.pagination a:hover {
+  background: #f4a261;
+}
+
+/* CTA */
+
+.shop-cta {
+  background: #111;
+  color: #fff;
+
+  text-align: center;
+
+  padding: 100px 20px;
+}
+
+.shop-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+
+  font-family: "Oswald", sans-serif;
+}
+
+.shop-cta p {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background: #f4a261;
+  color: #111;
+
+  padding: 15px 30px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  .shop-toolbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search-box {
+    width: 500px;
+  }
+}
+
+
+
+
 /* 💬 Floating WhatsApp */
 .whatsapp-float {
   position: fixed;
